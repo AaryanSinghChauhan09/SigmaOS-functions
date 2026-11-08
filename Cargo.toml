@@ -1,17 +1,10 @@
 [package]
-name = "sigmaos-functions"
+name = "sigmaos_functions"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "System functions and utilities"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-functions"
-readme = "README.md"
-keywords = ["functions", "utilities", "helpers"]
-categories = ["os"]
+license = "MIT"
+description = "SigmaOS functions component inspired by Linux Mint / Omarchy / Arch Linux."
 
-[dependencies]
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_functions"
+path = "src/lib.rs"
